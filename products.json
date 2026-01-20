@@ -1,0 +1,842 @@
+[
+    {
+        "id": 1,
+        "title": "Asus TUF Gaming B850-PLUS Wi-Fi",
+        "price": 11477,
+        "category": "motherboard",
+        "image": "kartinti_mat/502800245.webp"
+    },
+    {
+        "id": 2,
+        "title": "Gigabyte B550M Aorus Elite",
+        "price": 4599,
+        "category": "motherboard",
+        "image": "kartinti_mat/30200012.webp"
+    },
+    {
+        "id": 3,
+        "title": "Asus ROG Strix B850-A Gaming Wi-Fi",
+        "price": 14095,
+        "category": "motherboard",
+        "image": "kartinti_mat/597703139.webp"
+    },
+    {
+        "id": 4,
+        "title": "Asus PRIME B650M-K",
+        "price": 5879,
+        "category": "motherboard",
+        "image": "kartinti_mat/471647747.webp"
+    },
+    {
+        "id": 5,
+        "title": "Gigabyte B650 EAGLE AX",
+        "price": 8699,
+        "category": "motherboard",
+        "image": "kartinti_mat/511721509.webp"
+    },
+    {
+        "id": 6,
+        "title": "Asus ROG Strix B850-E Gaming Wi-Fi",
+        "price": 18299,
+        "category": "motherboard",
+        "image": "kartinti_mat/631395400.webp"
+    },
+    {
+        "id": 7,
+        "title": "MSI A520M-A Pro",
+        "price": 2565,
+        "category": "motherboard",
+        "image": "kartinti_mat/110735408 (1).webp"
+    },
+    {
+        "id": 8,
+        "title": "MSI B850M GAMING PLUS WIFI",
+        "price": 8904,
+        "category": "motherboard",
+        "image": "kartinti_mat/620678036.webp"
+    },
+    {
+        "id": 9,
+        "title": "Asus TUF Gaming B550-Plus",
+        "price": 6383,
+        "category": "motherboard",
+        "image": "kartinti_mat/597695862.webp"
+    },
+    {
+        "id": 10,
+        "title": "Asus ROG Strix B850-F Gaming Wi-Fi",
+        "price": 15215,
+        "category": "motherboard",
+        "image": "kartinti_mat/631395444.webp"
+    },
+    {
+        "id": 11,
+        "title": "Gigabyte B550M K",
+        "price": 3548,
+        "category": "motherboard",
+        "image": "kartinti_mat/330558994.webp"
+    },
+    {
+        "id": 12,
+        "title": "Gigabyte B550 AORUS ELITE V2",
+        "price": 7401,
+        "category": "motherboard",
+        "image": "kartinti_mat/392591241.webp"
+    },
+    {
+        "id": 13,
+        "title": "AMD Ryzen 7 7800X3D 4.2GHz/96MB",
+        "price": 18309,
+        "category": "cpu",
+        "image": "kartinki_proc/488395454.webp"
+    },
+    {
+        "id": 14,
+        "title": "Intel Core i7-11700KF 3.6GHz/16MB",
+        "price": 9945,
+        "category": "cpu",
+        "image": "kartinki_proc/579284975.webp"
+    },
+    {
+        "id": 15,
+        "title": "AMD Ryzen 7 7700 3.8GHz/32MB",
+        "price": 11599,
+        "category": "cpu",
+        "image": "kartinki_proc/492378402.webp"
+    },
+    {
+        "id": 16,
+        "title": "AMD Ryzen 5 7500F 3.7GHz/32MB",
+        "price": 7620,
+        "category": "cpu",
+        "image": "kartinki_proc/488395454.webp"
+    },
+    {
+        "id": 17,
+        "title": "Intel Core i9-10900F 2.8GHz/20MB",
+        "price": 10245,
+        "category": "cpu",
+        "image": "kartinki_proc/605135533.webp"
+    },
+    {
+        "id": 18,
+        "title": "Intel Core i7-9700F 3.0GHz/12MB",
+        "price": 6895,
+        "category": "cpu",
+        "image": "kartinki_proc/525787354.webp"
+    },
+    {
+        "id": 19,
+        "title": "AMD Ryzen 7 5700X",
+        "price": 6399,
+        "category": "cpu",
+        "image": "kartinki_proc/601082867.webp"
+    },
+    {
+        "id": 20,
+        "title": "Intel Core i5-12400F",
+        "price": 5390,
+        "category": "cpu",
+        "image": "kartinki_proc/505102949.webp"
+    },
+    {
+        "id": 21,
+        "title": "AMD Ryzen 5 3600",
+        "price": 3552,
+        "category": "cpu",
+        "image": "kartinki_proc/496980797.webp"
+    },
+    {
+        "id": 22,
+        "title": "AMD Ryzen 7 8700F 4.1GHz/16MB",
+        "price": 8399,
+        "category": "cpu",
+        "image": "kartinki_proc/490839506.webp"
+    },
+    {
+        "id": 23,
+        "title": "AMD Ryzen 3 1300X 3.7GHz",
+        "price": 1100,
+        "category": "cpu",
+        "image": "kartinki_proc/443041346.webp"
+    },
+    {
+        "id": 24,
+        "title": "Intel Core i5-14600KF 3.5GHz",
+        "price": 10182,
+        "category": "cpu",
+        "image": "kartinki_proc/597692870.webp"
+    },
+    {
+        "id": 25,
+        "title": "ASUS PCI-Ex GeForce RTX 5060 Dual OC Edition 8GB GDDR7",
+        "price": 16859,
+        "category": "gpu",
+        "image": "kartinki_vid/552341856.webp"
+    },
+    {
+        "id": 26,
+        "title": "Gigabyte PCI-Ex GeForce RTX 5060 WINDFORCE MAX OC 8GB GDDR7",
+        "price": 15699,
+        "category": "gpu",
+        "image": "kartinki_vid/585771073.webp"
+    },
+    {
+        "id": 27,
+        "title": "Asus PCI-Ex GeForce RTX 3050 Dual OC Edition 8GB GDDR6",
+        "price": 11799,
+        "category": "gpu",
+        "image": "kartinki_vid/359635245.webp"
+    },
+    {
+        "id": 28,
+        "title": "ASUS PCI-Ex Radeon RX 9060 XT Dual 16GB GDDR6",
+        "price": 20999,
+        "category": "gpu",
+        "image": "kartinki_vid/593208334.webp"
+    },
+    {
+        "id": 29,
+        "title": "ASUS PCI-Ex GeForce RTX 5050 Dual OC Edition 8GB GDDR6",
+        "price": 15459,
+        "category": "gpu",
+        "image": "kartinki_vid/587181029.webp"
+    },
+    {
+        "id": 30,
+        "title": "ASUS PCI-Ex GeForce RTX 3050 Dual OC Edition 6GB GDDR6",
+        "price": 9999,
+        "category": "gpu",
+        "image": "kartinki_vid/406762262.webp"
+    },
+    {
+        "id": 31,
+        "title": "MSI PCI-Ex GeForce RTX 5070 Ventus 2X OC 12GB GDDR7",
+        "price": 37999,
+        "category": "gpu",
+        "image": "kartinki_vid/518856383.webp"
+    },
+    {
+        "id": 32,
+        "title": "Palit GeForce RTX 2060 Super Dual",
+        "price": 11400,
+        "category": "gpu",
+        "image": "kartinki_vid/621940403.webp"
+    },
+    {
+        "id": 33,
+        "title": "Peladn AMD Radeon RX 580 8GB 256-Bit 2048SP Gaming",
+        "price": 7600,
+        "category": "gpu",
+        "image": "kartinki_vid/495533376.webp"
+    },
+    {
+        "id": 34,
+        "title": "MSI PCI-Ex GeForce RTX 5060 Ti GAMING OC 16GB GDDR7",
+        "price": 29019,
+        "category": "gpu",
+        "image": "kartinki_vid/541968563.webp"
+    },
+    {
+        "id": 35,
+        "title": "Arktek PCI-Ex GeForce GTX 1660 Super Dual Fan 6GB GDDR6",
+        "price": 9799,
+        "category": "gpu",
+        "image": "kartinki_vid/366881132.webp"
+    },
+    {
+        "id": 36,
+        "title": "MSI PCI-Ex GeForce RTX 5060 INSPIRE 2X OC 8GB GDDR7",
+        "price": 17499,
+        "category": "gpu",
+        "image": "kartinki_vid/551713423.webp"
+    },
+    {
+        "id": 37,
+        "title": "Apacer DDR5-5600 32768 MB PC5-44800",
+        "price": 14199,
+        "category": "ram",
+        "image": "kartinki_opra/516386706.webp"
+    },
+    {
+        "id": 38,
+        "title": "Kingston Fury DDR5-5200 32768 MB PC5-41600",
+        "price": 12499,
+        "category": "ram",
+        "image": "kartinki_opra/232391759.webp"
+    },
+    {
+        "id": 39,
+        "title": "ADATA DDR5-6000 32768MB PC5-48000",
+        "price": 22560,
+        "category": "ram",
+        "image": "kartinki_opra/558534586.webp"
+    },
+    {
+        "id": 40,
+        "title": "ADATA DDR5-6400 32768MB PC5-51200",
+        "price": 31828,
+        "category": "ram",
+        "image": "kartinki_opra/443372981.webp"
+    },
+    {
+        "id": 41,
+        "title": "G.Skill DDR5-6000 32768MB PC5-48000",
+        "price": 17485,
+        "category": "ram",
+        "image": "kartinki_opra/318371767.webp"
+    },
+    {
+        "id": 42,
+        "title": "Goodram DDR5-6400 32768MB PC5-51200",
+        "price": 14999,
+        "category": "ram",
+        "image": "kartinki_opra/382536304.webp"
+    },
+    {
+        "id": 43,
+        "title": "Lexar DDR4-3600 16384MB PC4-28800",
+        "price": 4699,
+        "category": "ram",
+        "image": "kartinki_opra/417669137.webp"
+    },
+    {
+        "id": 44,
+        "title": "Kingston Fury DDR5 16GB (2x8) 6000MHz Beast RGB EXPO",
+        "price": 9037,
+        "category": "ram",
+        "image": "kartinki_opra/616838873.webp"
+    },
+    {
+        "id": 45,
+        "title": "Exceleram DDR4 32GB (2x16GB) 2666MHz Black Sark",
+        "price": 7007,
+        "category": "ram",
+        "image": "kartinki_opra/488130206.webp"
+    },
+    {
+        "id": 46,
+        "title": "Patriot Viper Steel DDR4 16GB (2x8GB) 3600MHz",
+        "price": 5382,
+        "category": "ram",
+        "image": "kartinki_opra/277708154.webp"
+    },
+    {
+        "id": 47,
+        "title": "G.SKILL F5-5200J4040A16GX2-RS5K",
+        "price": 15539,
+        "category": "ram",
+        "image": "kartinki_opra/444377974.webp"
+    },
+    {
+        "id": 48,
+        "title": "G.Skill DDR4 32GB (2x16GB) 3200MHz TridentZ NEO",
+        "price": 13444,
+        "category": "ram",
+        "image": "kartinki_opra/438930940.webp"
+    },
+    {
+        "id": 201,
+        "title": "SSD диск Kingston NV3 1TB M.2 2280 NVMe PCIe 4.0 x4 3D NAND",
+        "price": 5719,
+        "category": "ssd",
+        "image": "kartinki_ssd/522104672.webp"
+    },
+    {
+        "id": 202,
+        "title": "SSD диск Kingston NV3 1TB M.2 2280 NVMe PCIe 4.0 x4 3D NAND",
+        "price": 5719,
+        "category": "ssd",
+        "image": "kartinki_ssd/458852748.webp"
+    },
+    {
+        "id": 203,
+        "title": "SSD диск Samsung 990 Pro 1TB M.2 PCIe 4.0 x4 NVMe 2.0 V-NAND 3bit",
+        "price": 9349,
+        "category": "ssd",
+        "image": "kartinki_ssd/348855672.webp"
+    },
+    {
+        "id": 204,
+        "title": "SSD диск Gigabyte Gen4 4000E 250GB M.2 2280 NVMe PCIe 4.0 x4 3D",
+        "price": 2299,
+        "category": "ssd",
+        "image": "kartinki_ssd/510833998.webp"
+    },
+    {
+        "id": 205,
+        "title": "SSD диск Goodram PX500 Gen.3 1TB M.2 2280 PCIe 3.0 x4 NVMe",
+        "price": 6729,
+        "category": "ssd",
+        "image": "kartinki_ssd/471012108.webp"
+    },
+    {
+        "id": 206,
+        "title": "SSD диск Kingston NV3 2TB M.2 2280 NVMe PCIe 4.0 x4 3D NAND",
+        "price": 10879,
+        "category": "ssd",
+        "image": "kartinki_ssd/458853192.webp"
+    },
+    {
+        "id": 207,
+        "title": "SSD диск Kingston KC3000 1TB M.2 2280 NVMe PCIe Gen 4.0 x4",
+        "price": 8639,
+        "category": "ssd",
+        "image": "kartinki_ssd/237276498.webp"
+    },
+    {
+        "id": 208,
+        "title": "SSD диск Western Digital Green SN3000 1TB M.2 2280 NVMe PCIe 4.0",
+        "price": 5629,
+        "category": "ssd",
+        "image": "kartinki_ssd/532093208.webp"
+    },
+    {
+        "id": 209,
+        "title": "SSD диск MSI Spatium M450 1TB NVMe M.2 PCIe 4.0 TLC 3D NAND",
+        "price": 5999,
+        "category": "ssd",
+        "image": "kartinki_ssd/396887813.webp"
+    },
+    {
+        "id": 210,
+        "title": "SSD диск Samsung 990 Pro 4TB M.2 PCIe 4.0 x4 V-NAND 3-bit MLC",
+        "price": 28999,
+        "category": "ssd",
+        "image": "kartinki_ssd/423131361.webp"
+    },
+    {
+        "id": 211,
+        "title": "SSD диск Western Digital Blue SN580 NVMe 1TB M.2 2280 PCIe 4.0 x4 3D",
+        "price": 6999,
+        "category": "ssd",
+        "image": "kartinki_ssd/382023397.webp"
+    },
+    {
+        "id": 212,
+        "title": "SSD диск Kingston FURY Renegade with Heatsink 2TB NVMe M.2 2280",
+        "price": 15859,
+        "category": "ssd",
+        "image": "kartinki_ssd/295523492.webp"
+    },
+    {
+        "id": 57,
+        "title": "Жорсткий диск Seagate BarraCuda HDD 2TB",
+        "price": 4699,
+        "category": "hdd",
+        "image": "kartinki_hdd/12241784.webp"
+    },
+    {
+        "id": 58,
+        "title": "Жорсткий диск Western Digital Red Plus 4TB",
+        "price": 7529,
+        "category": "hdd",
+        "image": "kartinki_hdd/303715831.webp"
+    },
+    {
+        "id": 59,
+        "title": "Жорсткий диск Seagate SkyHawk 4TB",
+        "price": 5099,
+        "category": "hdd",
+        "image": "kartinki_hdd/273481745.webp"
+    },
+    {
+        "id": 60,
+        "title": "Жорсткий диск Seagate IronWolf HDD 8TB",
+        "price": 11509,
+        "category": "hdd",
+        "image": "kartinki_hdd/15961545.webp"
+    },
+    {
+        "id": 61,
+        "title": "Жорсткий диск Western Digital Purple Pro 18TB",
+        "price": 20499,
+        "category": "hdd",
+        "image": "kartinki_hdd/191535972.webp"
+    },
+    {
+        "id": 62,
+        "title": "Жорсткий диск Toshiba Surveillance Hard Drive",
+        "price": 3899,
+        "category": "hdd",
+        "image": "kartinki_hdd/572590882.webp"
+    },
+    {
+        "id": 63,
+        "title": "Жорсткий диск Toshiba P300 500GB",
+        "price": 1999,
+        "category": "hdd",
+        "image": "kartinki_hdd/384992684.webp"
+    },
+    {
+        "id": 64,
+        "title": "Жорсткий диск Seagate Exos 7E10 6TB 7200rpm",
+        "price": 9999,
+        "category": "hdd",
+        "image": "kartinki_hdd/250567300.webp"
+    },
+    {
+        "id": 65,
+        "title": "Накопичувач HDD SATA 18.0TB",
+        "price": 20817,
+        "category": "hdd",
+        "image": "kartinki_hdd/588597441.webp"
+    },
+    {
+        "id": 66,
+        "title": "Жорсткий диск Western Digital Blue 2TB",
+        "price": 6511,
+        "category": "hdd",
+        "image": "kartinki_hdd/328764580.webp"
+    },
+    {
+        "id": 67,
+        "title": "Жорсткий диск Western Digital Black Gaming 10TB",
+        "price": 21535,
+        "category": "hdd",
+        "image": "kartinki_hdd/592805347.webp"
+    },
+    {
+        "id": 68,
+        "title": "Жорсткий диск Seagate IronWolf HDD 12TB",
+        "price": 19811,
+        "category": "hdd",
+        "image": "kartinki_hdd/314977196.webp"
+    },
+    {
+        "id": 69,
+        "title": "Кулер процесорний ID-Cooling Frozn A400 Black",
+        "price": 929,
+        "category": "cooling",
+        "image": "kartinki_cold/426118705.webp"
+    },
+    {
+        "id": 70,
+        "title": "Кулер be quiet! Pure Rock Pro 3 Black (BK042)",
+        "price": 2549,
+        "category": "cooling",
+        "image": "kartinki_cold/525171121.webp"
+    },
+    {
+        "id": 71,
+        "title": "Кулер DeepCool AK400 Zero Dark Plus Black",
+        "price": 2219,
+        "category": "cooling",
+        "image": "kartinki_cold/297749889.webp"
+    },
+    {
+        "id": 72,
+        "title": "Кулер be quiet! Dark Rock 5 (BK035)",
+        "price": 3699,
+        "category": "cooling",
+        "image": "kartinki_cold/450991418.webp"
+    },
+    {
+        "id": 73,
+        "title": "Кулер DeepCool AK400 Digital Pro",
+        "price": 2299,
+        "category": "cooling",
+        "image": "kartinki_cold/511805706.webp"
+    },
+    {
+        "id": 74,
+        "title": "Кулер ID-Cooling SE-206-XT Black",
+        "price": 1649,
+        "category": "cooling",
+        "image": "kartinki_cold/346549222.webp"
+    },
+    {
+        "id": 75,
+        "title": "Кулер процесорний ID-COOLING SE-214-XT",
+        "price": 999,
+        "category": "cooling",
+        "image": "kartinki_cold/498723577.webp"
+    },
+    {
+        "id": 76,
+        "title": "Кулер процесорний ID-COOLING Frozn A400 ARGB",
+        "price": 1299,
+        "category": "cooling",
+        "image": "kartinki_cold/498723031.webp"
+    },
+    {
+        "id": 77,
+        "title": "Кулер процесорний ID-Cooling SE-224-XTS Mini Black",
+        "price": 999,
+        "category": "cooling",
+        "image": "kartinki_cold/356538895.webp"
+    },
+    {
+        "id": 78,
+        "title": "Кулер Deepcool ASSASSIN IV",
+        "price": 4549,
+        "category": "cooling",
+        "image": "kartinki_cold/364556699.webp"
+    },
+    {
+        "id": 79,
+        "title": "Кулер DeepCool AK620",
+        "price": 3039,
+        "category": "cooling",
+        "image": "kartinki_cold/238341852.webp"
+    },
+    {
+        "id": 80,
+        "title": "Кулер be quiet! Pure Rock Pro 3 LX Black (BK043)",
+        "price": 2749,
+        "category": "cooling",
+        "image": "kartinki_cold/525178330.webp"
+    },
+    {
+        "id": 81,
+        "title": "Блок живлення Gigabyte P750GM 80+ Gold",
+        "price": 3999,
+        "category": "psu",
+        "image": "kartinki_bp/53790749.webp"
+    },
+    {
+        "id": 82,
+        "title": "Блок живлення GameMax GM-500B",
+        "price": 1099,
+        "category": "psu",
+        "image": "kartinki_bp/493478407.webp"
+    },
+    {
+        "id": 83,
+        "title": "Блок живлення DeepCool PF750 750W",
+        "price": 2679,
+        "category": "psu",
+        "image": "kartinki_bp/300738320.webp"
+    },
+    {
+        "id": 84,
+        "title": "Блок живлення be quiet! Straight Power 1200 Вт",
+        "price": 11699,
+        "category": "psu",
+        "image": "kartinki_bp/353759067.webp"
+    },
+    {
+        "id": 85,
+        "title": "Блок живлення be quiet! PURE POWER 850W",
+        "price": 6229,
+        "category": "psu",
+        "image": "kartinki_bp/317230677.webp"
+    },
+    {
+        "id": 86,
+        "title": "Блок живлення be quiet! POWER ZONE 2 1000W",
+        "price": 8699,
+        "category": "psu",
+        "image": "kartinki_bp/533789187.webp"
+    },
+    {
+        "id": 87,
+        "title": "Блок живлення DeepCool PL650D 650W",
+        "price": 3269,
+        "category": "psu",
+        "image": "kartinki_bp/530081949.webp"
+    },
+    {
+        "id": 88,
+        "title": "Блок живлення Gigabyte GOLD 850W ATX 3.0",
+        "price": 6199,
+        "category": "psu",
+        "image": "kartinki_bp/361502771.webp"
+    },
+    {
+        "id": 89,
+        "title": "Блок живлення AeroCool VX Plus 750W",
+        "price": 2199,
+        "category": "psu",
+        "image": "kartinki_bp/356124724.webp"
+    },
+    {
+        "id": 90,
+        "title": "Блок живлення DeepCool PN750M 750W",
+        "price": 5699,
+        "category": "psu",
+        "image": "kartinki_bp/570810301.webp"
+    },
+    {
+        "id": 91,
+        "title": "Блок живлення be quiet! Pure Power 12 750W",
+        "price": 4999,
+        "category": "psu",
+        "image": "kartinki_bp/524773815.webp"
+    },
+    {
+        "id": 92,
+        "title": "Блок живлення Cougar GEX 750",
+        "price": 5299,
+        "category": "psu",
+        "image": "kartinki_bp/178053801.webp"
+    },
+    {
+        "id": 93,
+        "title": "Корпус 1STPLAYER D4-BK-4F1 Black",
+        "price": 1899,
+        "category": "case",
+        "image": "kartinki_case/550106243.webp"
+    },
+    {
+        "id": 94,
+        "title": "Корпус Gamdias Aura GC7 ARGB Black",
+        "price": 1599,
+        "category": "case",
+        "image": "kartinki_case/451208720.webp"
+    },
+    {
+        "id": 95,
+        "title": "Корпус 1STPLAYER D4-WH-4F1-W White",
+        "price": 1899,
+        "category": "case",
+        "image": "kartinki_case/550104855.webp"
+    },
+    {
+        "id": 96,
+        "title": "Корпус Prologix E115 Tempered Glass & Mesh Black",
+        "price": 2299,
+        "category": "case",
+        "image": "kartinki_case/451284139.webp"
+    },
+    {
+        "id": 97,
+        "title": "Корпус PcCooler C3B310 BK",
+        "price": 1539,
+        "category": "case",
+        "image": "kartinki_case/416965335.webp"
+    },
+    {
+        "id": 98,
+        "title": "Корпус Deepcool CG580 Black",
+        "price": 3459,
+        "category": "case",
+        "image": "kartinki_case/504970275.webp"
+    },
+    {
+        "id": 99,
+        "title": "Корпус MSI MAG Forge 100M Black",
+        "price": 2899,
+        "category": "case",
+        "image": "kartinki_case/127812442.webp"
+    },
+    {
+        "id": 100,
+        "title": "Корпус Prologix E113 Tempered Glass & Mesh",
+        "price": 1399,
+        "category": "case",
+        "image": "kartinki_case/399096272.webp"
+    },
+    {
+        "id": 101,
+        "title": "Корпус PcCOOLER C3D310 BK",
+        "price": 2099,
+        "category": "case",
+        "image": "kartinki_case/551811845.webp"
+    },
+    {
+        "id": 102,
+        "title": "Корпус Cougar Uniface RGB Black",
+        "price": 4199,
+        "category": "case",
+        "image": "kartinki_case/419010910.webp"
+    },
+    {
+        "id": 103,
+        "title": "Корпус be quiet! Pure Base 501 Airflow Window",
+        "price": 4749,
+        "category": "case",
+        "image": "kartinki_case/494721270.webp"
+    },
+    {
+        "id": 104,
+        "title": "Корпус GameMax Starlight 2 AB",
+        "price": 2349,
+        "category": "case",
+        "image": "kartinki_case/542875439.webp"
+    },
+    {
+        "id": 105,
+        "title": "Комп'ютер Apple Mac Mini M4 16/512GB",
+        "price": 49999,
+        "category": "pc",
+        "image": "kartinki_cborki/486099022.webp"
+    },
+    {
+        "id": 106,
+        "title": "hp prodesk 600 g3 dm",
+        "price": 9,
+        "category": "pc",
+        "image": "kartinki_cborki/HP_ProDesk_600_G3_Mini.jpg"
+    },
+    {
+        "id": 107,
+        "title": "Комп'ютер ARTLINE Gaming X43 (X43v59)",
+        "price": 31999,
+        "category": "pc",
+        "image": "kartinki_cborki/536883476.webp"
+    },
+    {
+        "id": 108,
+        "title": "Комп'ютер Cobra (A55.32.S10.55.22295)",
+        "price": 33999,
+        "category": "pc",
+        "image": "kartinki_cborki/602895942.webp"
+    },
+    {
+        "id": 109,
+        "title": "Комп'ютер ARTLINE Gaming X47 (X47v45)",
+        "price": 40399,
+        "category": "pc",
+        "image": "kartinki_cborki/320078659.webp"
+    },
+    {
+        "id": 110,
+        "title": "Комп'ютер Cobra Advanced (A55.16.S4.35.19300)",
+        "price": 31999,
+        "category": "pc",
+        "image": "kartinki_cborki/602895942.webp"
+    },
+    {
+        "id": 111,
+        "title": "Комп'ютер COBRA Advanced (A55.16.S10.56.23064)",
+        "price": 37999,
+        "category": "pc",
+        "image": "kartinki_cborki/620425198.webp"
+    },
+    {
+        "id": 112,
+        "title": "Комп'ютер ARTLINE Gaming X43 (X43v45)",
+        "price": 32999,
+        "category": "pc",
+        "image": "kartinki_cborki/416512630.webp"
+    },
+    {
+        "id": 113,
+        "title": "Моноблок Lenovo IdeaCentre AIO 24IRH9",
+        "price": 23999,
+        "category": "pc",
+        "image": "https://content.rozetka.com.ua/goods/images/big/462360643.jpg"
+    },
+    {
+        "id": 114,
+        "title": "Комп'ютер ARTLINE Gaming D31 (D31v88)",
+        "price": 88494,
+        "category": "pc",
+        "image": "kartinki_cborki/528829909.webp"
+    },
+    {
+        "id": 115,
+        "title": "Комп'ютер Cobra (I124F.32.S10.55.22296)",
+        "price": 34999,
+        "category": "pc",
+        "image": "kartinki_cborki/602899331.webp"
+    },
+    {
+        "id": 116,
+        "title": "Комп'ютер COBRA Advanced (A75F.32.S10.56.19971)",
+        "price": 53999,
+        "category": "pc",
+        "image": "kartinki_cborki/555319748.webp"
+    }
+]

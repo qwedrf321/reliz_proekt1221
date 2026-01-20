@@ -1,0 +1,370 @@
+.body {
+    background-color: #B7E64F;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu {
+    margin-top: 20px;
+    background-color: #82B118;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+
+.cont_like {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.cont_shop {
+    background-color: #D6F792;
+}
+
+.home{
+    text-decoration: none;
+    padding: 20px;
+}
+
+.like {
+    width: 40px;
+    height: 35px;
+}
+
+.shop {
+    width: 35px;
+    height: 35px;
+}
+
+.filters {
+    background-color: #A1D331;
+    /*background-color: rgba(45, 150, 64, 0.625);*/
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 2%;
+}
+
+.filter_list {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #212d06;
+}
+.filter_item {
+    padding: 15px;
+    border-bottom: 2px solid #212d06; 
+}
+
+.filter_item a {
+    display: block;
+    padding: 15px;
+    color: #212d06;
+}
+
+.filter_item a.active {
+    background-color: #82B118;
+    color: white;
+    border-left: 5px solid #212d06;
+}
+.products {
+    margin-top: 2%;
+    /*background-color: rgb(95, 76, 108);*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    width: 100%; 
+    padding-bottom: 20px; 
+}
+
+.product {
+    /*background-color: rgb(202, 107, 107);*/
+    background-color: #D6F792;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    gap: 8px;
+    padding: 16px;
+}
+
+.product_image_mat {
+    width: 170px;
+    height: 215px;
+}
+
+.product_img {
+    height: 215px;
+    display: flex;
+    /*background-color: tomato;*/
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.product-vid {
+    /*background-color: rgb(202, 107, 107);*/
+    background-color: #D6F792;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    gap: 8px;
+    padding: 16px;
+}
+.product_img-vid {
+    height: 180px;
+    display: flex;
+    /*background-color: tomato;*/
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.product_img-ssd {
+    height: 100px;
+    display: flex;
+    /*background-color: tomato;*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.product_img-hdd {
+    height: 215px;
+    display: flex;
+    /*background-color: tomato;*/
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.product_img-cold{
+    height: 215px;
+    display: flex;
+    /*background-color: tomato;*/
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.product_image_case {
+    width: 170px;
+    height: 215px;
+}
+
+.product_image_case-tall{
+    width: 160px;
+    height: 215px;
+}
+.product_image_mat-m {
+    width: 170px;
+    height: 180px;
+}
+
+.product_image_proc{
+    width: 170px;
+    height: 180px;
+}
+
+.product_image_vid{
+    width: 170px;
+    height: 100px;
+}
+
+.product_image_ssd{
+    width: 170px;
+    height: 60px;
+}
+
+.product_image_hdd{
+    width: 150px;
+    height: 190px;
+}
+
+.product_image-cold{
+    width: 170px;
+    height: 180px;
+}
+
+.product_image-cold-big{
+    width: 170px;
+    height: 160px;
+}
+
+.product_image-bp{
+    width: 170px;
+    height: 190px;
+}
+.product-ssd {
+    background-color: #D6F792;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    gap: 8px;
+    padding: 16px;
+}
+.title {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    min-height: 36px;
+    line-height: 18px;
+}
+
+.price {
+    font-size: 18px;
+    color: #df5353;
+    font-weight: bold;
+}
+
+.buy_button {
+    background-color: #82B118;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prbt {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: auto;
+
+}
+
+.content {
+    /*background-color: rgb(136, 163, 188);*/
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.about_us {
+    background-color: #C9F26E;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.footer {
+    background-color: #82B118;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+/*=======================================================================*/
+/* Окно корзины */
+.simple-cart {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    /* Прячем вправо */
+    width: 320px;
+    height: 100vh;
+    z-index: 9999;
+    /* Поверх всего! */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color:#212d06;
+    background-color: #D6F792;
+}
+
+/* Когда корзина открыта */
+.simple-cart.active {
+    right: 0;
+}
+
+/* Затемнение */
+.simple-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9998;
+}
+
+.simple-overlay.active {
+    display: block;
+}
+
+/* Красивые мелочи */
+.cart-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cart-bottom {
+    margin-top: 10%;
+    padding-bottom: 20px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/*=======================================================================*/
+.pagination {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 6px 12px;
+    border: none;
+    background: #82B118;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
