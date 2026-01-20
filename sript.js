@@ -1,250 +1,197 @@
+// ================== ЗАХИСТ ДЛЯ STORE.HTML ==================
 const productsContainer = document.getElementById('products');
-let allProducts = [];
+if (!productsContainer) {
+    console.log('Catalog JS not needed on this page');
+} else {
 
-fetch('products.json')
-    .then(res => res.json())
-    .then(data => {
-        allProducts = data;
-        renderProducts(allProducts);
-    });
-function getCookieValue(cookieName) {
-    // Розділяємо всі куки на окремі частини
-    const cookies = document.cookie.split(';');
+    let allProducts = [];
+    let currentProducts = [];
+    let currentPage = 1;
+    const perPage = 30;
 
-    // Шукаємо куки з вказаним ім'ям
-    for (let i = 0; i < cookies.length; i++) {
-        const cookie = cookies[i].trim(); // Видаляємо зайві пробіли
+    const pageInfo = document.getElementById("pageInfo");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
 
-        // Перевіряємо, чи починається поточне кукі з шуканого імені
-        if (cookie.startsWith(cookieName + '=')) {
-            // Якщо так, повертаємо значення кукі
-            return cookie.substring(cookieName.length + 1); // +1 для пропуску символу "="
+    // ================== COOKIES ==================
+    function getCookieValue(cookieName) {
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            cookie = cookie.trim();
+            if (cookie.startsWith(cookieName + '=')) {
+                return cookie.substring(cookieName.length + 1);
+            }
+        }
+        return '';
+    }
+
+    // ================== КОРЗИНА ==================
+    class ShoppingCart {
+        constructor() {
+            this.items = {};
+            this.loadCartFromCookies();
+        }
+
+        addItem(item) {
+            if (this.items[item.title]) {
+                this.items[item.title].quantity += 1;
+            } else {
+                this.items[item.title] = { ...item, quantity: 1 };
+            }
+            this.saveCartToCookies();
+        }
+
+        saveCartToCookies() {
+            document.cookie = `cart=${JSON.stringify(this.items)}; path=/; max-age=${60 * 60 * 24 * 7}`;
+        }
+
+        loadCartFromCookies() {
+            const data = getCookieValue('cart');
+            if (data) this.items = JSON.parse(data);
+        }
+
+        calculateTotal() {
+            let total = 0;
+            for (let key in this.items) {
+                total += this.items[key].price * this.items[key].quantity;
+            }
+            return total;
         }
     }
-    // Якщо кукі з вказаним іменем не знайдено, повертаємо порожній рядок або можна повернути null
-    return '';
-}
-function renderProducts(products) {
-    productsContainer.innerHTML = '';
 
-    products.forEach(p => {
-        productsContainer.innerHTML += `
-            <div class="product" data-category="${p.category}">
-                <div class="product_img">
-                    <img src="${p.image}" style="max-width:170px">
+    // ================== РЕНДЕР ==================
+    function renderPage() {
+        productsContainer.innerHTML = '';
+
+        const start = (currentPage - 1) * perPage;
+        const end = start + perPage;
+        const pageItems = currentProducts.slice(start, end);
+
+        pageItems.forEach(p => {
+            productsContainer.innerHTML += `
+                <div class="product">
+                    <div class="product_img">
+                        <img src="${p.image}" style="max-width:170px">
+                    </div>
+                    <div class="title">${p.title}</div>
+                    <div class="prbt">
+                        <div class="price">${p.price}₴</div>
+                        <button 
+                            class="buy_button"
+                            data-product='${JSON.stringify(p)}'>
+                            Купити
+                        </button>
+                    </div>
                 </div>
-                <div class="title">${p.title}</div>
-                <div class="prbt">
-                    <div class="price">${p.price}₴</div>
-                    <button class="buy_button"data-product='${JSON.stringify(p)}>Купити</button>
-                </div>
-            </div>
-        `;
-    });
-}
-document.querySelectorAll('[data-filter]').forEach(btn => {
-    btn.addEventListener('click', e => {
-        e.preventDefault();
+            `;
+        });
 
-        const category = btn.dataset.filter;
+        const totalPages = Math.ceil(currentProducts.length / perPage);
+        const pagination = document.querySelector('.pagination');
 
-        if (category === 'all') {
-            renderProducts(allProducts);
+        // Скрываем пагинацию если нет результатов
+        if (currentProducts.length === 0) {
+            pagination.style.display = 'none';
+            pageInfo.textContent = '0 / 0';
         } else {
-            const filtered = allProducts.filter(
-                p => p.category === category
-            );
-            renderProducts(filtered);
+            pagination.style.display = 'block';
+            pageInfo.textContent = `${currentPage} / ${totalPages}`;
+        }
+
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = currentPage === totalPages;
+    }
+
+    // ================== КНОПКИ ПАГІНАЦІЇ ==================
+    prevBtn.onclick = () => {
+        if (currentPage > 1) {
+            currentPage--;
+            renderPage();
+        }
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // плавно
+        });
+    };
+
+    nextBtn.onclick = () => {
+        const totalPages = Math.ceil(currentProducts.length / perPage);
+        if (currentPage < totalPages) {
+            currentPage++;
+            renderPage();
+        }
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // плавно
+        });
+    };
+
+    // ================== ФІЛЬТРИ ==================
+    const filterLinks = document.querySelectorAll('.filter_list a[data-filter]');
+
+    filterLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            filterLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            const category = link.dataset.filter;
+            currentPage = 1;
+            currentProducts = category === 'all'
+                ? allProducts
+                : allProducts.filter(p => p.category === category);
+            renderPage();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // плавно
+            });
+        });
+    });
+
+    // ================== ПОИСК ==================
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
+            currentPage = 1;
+
+            if (query === '') {
+                currentProducts = allProducts;
+            } else {
+                currentProducts = allProducts.filter(p =>
+                    p.title.toLowerCase().includes(query)
+                );
+            }
+
+            renderPage();
+        });
+    }
+
+    // ================== ДОДАВАННЯ В КОРЗИНУ (ДЕЛЕГУВАННЯ) ==================
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('buy_button')) {
+            const productData = e.target.dataset.product;
+            if (!productData) return;
+
+            const product = JSON.parse(productData);
+            cart.addItem(product);
+
+            console.log('Added to cart:', cart.items);
         }
     });
-});
-// ================== ПАГИНАЦИЯ ==================
-const productContainer = document.getElementById('products');
-const pageInfo = document.getElementById("pageInfo");
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
 
-let allproducts = [];
-let currentProducts = [];
-let currentPage = 1;
-const perPage = 48;
-
-// ===== ЗАГРУЗКА =====
-fetch('products.json')
-    .then(res => res.json())
-    .then(data => {
-        allproducts = data;
-        currentProducts = allproducts;
-        renderPage();
-    });
-
-// ===== РЕНДЕР СТРАНИЦЫ =====
-function renderPage() {
-    productContainer.innerHTML = '';
-
-    const start = (currentPage - 1) * perPage;
-    const end = start + perPage;
-    const pageItems = currentProducts.slice(start, end);
-
-    pageItems.forEach(p => {
-        productContainer.innerHTML += `
-            <div class="product">
-                <div class="product_img">
-                    <img src="${p.image}" style="max-width:170px">
-                </div>
-                <div class="title">${p.title}</div>
-                <div class="prbt">
-                    <div class="price">${p.price}₴</div>
-                    <button class="buy_button">Купити</button>
-                </div>
-            </div>
-        `;
-    });
-
-    const totalPages = Math.ceil(currentProducts.length / perPage);
-    pageInfo.textContent = `${currentPage} / ${totalPages}`;
-
-    prevBtn.disabled = currentPage === 1;
-    nextBtn.disabled = currentPage === totalPages;
-}
-
-// ===== КНОПКИ =====
-prevBtn.onclick = () => {
-    if (currentPage > 1) {
-        currentPage--;
-        renderPage();
-    }
-};
-
-nextBtn.onclick = () => {
-    const totalPages = Math.ceil(currentProducts.length / perPage);
-    if (currentPage < totalPages) {
-        currentPage++;
-        renderPage();
-    }
-};
-
-// ===== ФИЛЬТР =====
-document.querySelectorAll('[data-filter]').forEach(btn => {
-    btn.addEventListener('click', e => {
-        e.preventDefault();
-
-        const category = btn.dataset.filter;
-        currentPage = 1;
-
-        currentProducts = category === 'all'
-            ? allproducts
-            : allproducts.filter(p => p.category === category);
-
-        renderPage();
-    });
-});
-//-----------
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-fetch('products.json')
-    .then(res => res.json())
-    .then(data => {
-        allProducts = data;
-
-        shuffle(allProducts); // ← ВОТ ЭТО ГЛАВНОЕ
-
-        currentProducts = allProducts;
-        renderPage();
-    });
-
-function smartShuffle(products) {
-    for (let round = 0; round < 5; round++) {
-        products.sort(() => Math.random() - 0.5);
-    }
-
-    for (let i = 2; i < products.length; i++) {
-        const a = products[i].category;
-        const b = products[i - 1].category;
-        const c = products[i - 2].category;
-
-        if (a === b && b === c) {
-            const swapIndex = Math.floor(Math.random() * i);
-            [products[i], products[swapIndex]] = [products[swapIndex], products[i]];
-        }
-    }
-}
-
-smartShuffle(allProducts);
-currentProducts = allProducts;
-renderPage();
-//dobavlenie v korzinu
-// Отримуємо всі кнопки "Купити" на сторінці
-let buyButtons = document.querySelectorAll('.buy_button');
-// Навішуємо обробник подій на кожну кнопку "Купити"
-if (buyButtons) {
-    buyButtons.forEach(function (button) {
-        button.addEventListener('click', addToCart);
-    });
-}
-
-// Створення класу кошика
-class ShoppingCart {
-    constructor() {
-        this.items = {};
-        this.loadCartFromCookies(); // завантажуємо з кукі-файлів раніше додані в кошик товари
-    }
-
-    // Додавання товару до кошика
-    addItem(item) {
-        if (this.items[item.title]) {
-            this.items[item.title].quantity += 1; // Якщо товар вже є, збільшуємо його кількість на одиницю
-        } else {
-            this.items[item.title] = item; // Якщо товару немає в кошику, додаємо його
-            this.items[item.title].quantity = 1;
-        }
-        this.saveCartToCookies();
-    }
-
-
-    // Зберігання кошика в кукі
-    saveCartToCookies() {
-        let cartJSON = JSON.stringify(this.items);
-        document.cookie = `cart=${cartJSON}; max-age=${60 * 60 * 24 * 7}; path=/`;
-    }
-
-    // Завантаження кошика з кукі
-    loadCartFromCookies() {
-        let cartCookie = getCookieValue('cart');
-        if (cartCookie && cartCookie !== '') {
-            this.items = JSON.parse(cartCookie);
-        }
-    }
-    // Обчислення загальної вартості товарів у кошику
-    calculateTotal() {
-        let total = 0;
-        for (let key in this.items) { // проходимося по всіх ключах об'єкта this.items
-            total += this.items[key].price * this.items[key].quantity; // рахуємо вартість усіх товарів
-        }
-        return total;
-    }
-}
-
-// Створення об'єкта кошика 
-let cart = new ShoppingCart();
-
-
-// Функція для додавання товару до кошика при кліку на кнопку "Купити"
-function addToCart(event) {
-    // Отримуємо дані про товар з data-атрибута кнопки
-    const productData = event.target.getAttribute('data-product');
-    const product = JSON.parse(productData);
-    console.log(cart);
-    
-
-    // Додаємо товар до кошика
-
-    cart.addItem(product);
-    console.log(cart);
-
+    // ================== ЗАВАНТАЖЕННЯ ТОВАРІВ ==================
+    fetch('products.json')
+        .then(res => res.json())
+        .then(data => {
+            allProducts = shuffleArray([...data]); // перемешиваем
+            currentProducts = allProducts;
+            renderPage();
+        });
 }
